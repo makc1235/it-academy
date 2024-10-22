@@ -1,0 +1,12 @@
+.parent {
+    border: 1px solid black;
+    margin: 20px;
+}
+.kids {
+    background: darkblue;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    /*padding: 20px;*/
+    /*padding: 20px 20px 20px 20px;*/ /* top right bottom left */
+}

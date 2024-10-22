@@ -62,6 +62,21 @@ body {
 .text-weight {
     font-weight: 700; /* Изменение жирности текста*/
 }
+.text-italic{
+    font-style: italic; /* Курсив */
+}
+.text-underline{
+    text-decoration: underline;
+}
+
+.text-center{
+    text-align: center; /* Выравнивание по центру*/
+}
+
+.text-family{
+    font-family: Roboto, Arial, sans-serif; /* Семейство шрифтов */
+}
+
 
 
 
