@@ -1,0 +1,52 @@
+
+.box {
+    display: inline-block;
+    position: relative;
+    width: 950px;
+    background-color: red;
+    color: black;
+    height: 470px;
+
+}
+#second_child {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    right: 0;
+    bottom: 0;
+}
+#b {
+    position: absolute;
+    background-color: orange;
+}
+#v {
+    background-color: green;
+}
+#x {
+    position: absolute;
+    background-color: #70d2f4;
+}
+
+#t {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    right: 0;
+    bottom: 0;
+}
+
+#n {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    right: 0;
+    bottom: 0;
+}
+
+#o {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    right: 0;
+    bottom: 0;
+}
