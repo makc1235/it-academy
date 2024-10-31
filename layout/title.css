@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Высота на весь экран */
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #87509c;
+    color: white;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.navigation ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none; /* Убирает тчки ои ссписка */
+
+}
+.navigation li{
+    margin-right: 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    text-decoration: none; /* Без нижнего подчеркивания */
+
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    background-color: #17c2a4;
+    flex-grow: 1; /* Растянем данный блок на всю страницу */
+    justify-content:  center;
+    flex-direction: column;
+    color: #ffffff;
+}
+
+.main h1 {
+    margin-bottom:  40px;
+    margin-top: 0;
+}
+.main button {
+    width:  200px;
+    height: 50px;
+    background-color: #87509c;
+    color: #ffffff;
+    border: none;
+    cursor:pointer; /* Палец при наведении */
+}
+
+.footer {
+    background-color: #344b8e;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.main button:hover {
+    background-color: #344b8e; /* Изменение цвута при навидении */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto; /* Сверху и снизу - 0, слева и справа - auto */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
