@@ -3,6 +3,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
+    background-color: lightgray;
 }
 
 .log {
@@ -32,13 +33,16 @@ body {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
+    background-color: white;
+
 }
 .h {
-    padding-right: 400px;
+    padding-right: 350px;
 }
 
 .xp {
-    max-width: 600px;
+    max-width: 550px;
+    width: 100%;
 }
 
 
@@ -50,3 +54,36 @@ body {
 .table td{
     text-align: center;
 }
+
+.cp {
+    max-width: 300px;
+}
+.container2 {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+.container1 {
+    margin-right: 20px;
+}
+
+.main-container {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer {
+    background-color: #ed9c32;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    /*align-content: center;*/
+    /*align-self: center;*/
+    justify-content: center;
+
+}
+
