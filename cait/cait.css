@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: 75px;
+}
+
+.cla {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: white;
+
+}
+.h2 {
+    font-size: 50px;
+    margin-top: 300px;
+    justify-content: center;
+    display: flex;
+}
+
+.images {
+    top: 0;
+    display: flex;
+}
+.video {
+    color: white;
+    justify-content: center;
+    display: flex;
+    padding-top: 50px;
+    font-size: 23px;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    background: url('imagesss/01.jpg') center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cl {
+    justify-content: center;
+    display: flex;
+    font-size: 20px;
+    color: #686565;
+}
