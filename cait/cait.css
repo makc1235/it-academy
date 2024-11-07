@@ -42,19 +42,24 @@ h1 {
 .video {
     justify-content: center;
     display: flex;
-    padding: 20px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
     font-size: 20px;
     background-color: white;
+    align-items: center;
 }
 
 .background {
     width: 100%;
-    height: 100%;
-    background: url('imagesss/01.jpg') center bottom;
+    height: 100vh;
+    background: url('imagesss/01.jpg') center bottom no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
 .cl {
@@ -63,4 +68,84 @@ h1 {
     font-size: 20px;
     color: #686565;
 }
+.src {
+    display: flex;
 
+}
+
+.container1 {
+
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-left: 80px;
+
+}
+
+
+.hhh {
+    font-size: 20px;
+    color: #686565;
+
+}
+
+.hh {
+    font-size: 30px;
+
+}
+
+.h {
+    padding-top: 30px;
+    font-size: 20px;
+    color: #454343;
+}
+.container2 {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 35px;
+}
+
+.img2 {
+
+}
+.sss {
+    font-size: 30px;
+}
+
+.ss {
+    font-size: 20px;
+    color: #686565;
+}
+.s {
+    padding-top: 30px;
+
+    font-size: 20px;
+    color: #454343;
+}
+.container3 {
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin-left: 35px;
+
+}
+
+.ccc {
+    font-size: 30px;
+}
+
+.cc {
+    font-size: 20px;
+    color: #686565;
+}
+
+
+.mein-conteiner {
+    display: flex;
+    padding-top: 150px;
+
+}
