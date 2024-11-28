@@ -1,2 +1,10 @@
+
 let fgElement = document.getElementById('fg')
-fgElement.innerText = 'Новый текст'
+
+fgElement.addEventListener('click', yh )
+function yh() {
+    if(fgElement.innerText == 'Текст кнопки'){
+        fgElement.innerText = 'Новый текст'
+    }
+    else{fgElement.innerText = 'Текст кнопки'}
+}
