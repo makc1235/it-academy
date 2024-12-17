@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Добавление задачи</title>
+    <style>
+        label {
+            display: block;
+            margin-bottom: 4px;
+        }
+        input {
+            width: 98%;
+            padding: 5px 10px;
+        }
+        .form {
+            margin-bottom: 30px;
+        }
+        .form-title, .form-description {
+            margin-bottom: 20px;
+        }
+        .task {
+            padding: 16px;
+            margin-bottom: 16px;
+            border: 1px solid teal;
+        }
+        .task-title {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form">
+        <h2>Добавление задачи</h2>
+
+        <div class="form-title">
+            <label for="title">Название</label>
+            <input id="title">
+        </div>
+
+        <div class="form-description">
+            <label for="description">Описание</label>
+            <input id="description">
+        </div>
+
+        <button id="button">Добавить</button>
+    </div>
+
+    <div id="list"></div>
+<script src="tasks.js"></script>
+</body>
+</html>
