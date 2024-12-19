@@ -1,0 +1,135 @@
+.hea {
+    font-size: 30px;
+    font-style: initial;
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    border: rgba(0, 0, 0, 0.44) solid 1px;
+    height: 100px;
+    width: 700px;
+    padding-bottom: 50px;
+
+}
+#z1 {
+    display: flex;
+    justify-content: center;
+
+}
+.cont1 {
+    height: 660px;
+    width: 700px;
+    border: rgba(0, 0, 0, 0.44) solid 1px;
+    position: relative;
+    left: 142px;
+    top: 218px;
+}
+.inputN {
+    height: 34px;
+    width: 630px;
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(0, 100, 100);
+}
+.n1 {
+    margin-left: 30px;
+}
+#OP {
+    height:70px ;
+}
+#ButtonAdd {
+margin-top: 20px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: rgb(2, 104, 36);
+    color:white ;
+    border: 0;
+    font-size: 18px;
+    width: 180px;
+}
+#ButtonClear {
+    margin-top: 20px;
+    height: 50px;
+    margin-left: 30px;
+    background-color: rgb(64, 60, 60);
+    color:white ;
+    border: 0;
+    font-size: 18px;
+    width: 180px;
+}
+
+.cont2 {
+    min-height: 300px;
+    display: flex;
+    border: rgba(0, 0, 0, 0.44) solid 1px;
+    position: relative;
+   padding-bottom: 30px;
+    flex-wrap: wrap;
+    bottom: 31px;
+}
+.hea2 {
+    font-size: 25px;
+    font-style: initial;
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    border: rgba(0, 0, 0, 0.44) solid 1px;
+    height: 150px;
+    width: 600px;
+    margin-left: 900px;
+    justify-content: center;
+}
+#z2 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+    position: relative;
+    bottom: 14px;
+
+}
+.del {
+    background-color: #ff0000;
+    border: 0;
+    color: white;
+    height: 40px;
+    width: 80px;
+}
+.element {
+    border: rgba(0, 0, 0, 0.44) solid 1px;
+    height: 400px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+
+    margin-right: 30px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.title {
+    margin-bottom: 30px;
+    justify-self: center;
+
+}
+.text {
+    flex-wrap: wrap;
+    display: flex;
+    font-size: 25px;
+}
+.an {
+    background-color: rgba(2, 154, 2, 0.91);
+    border: 0;
+    height: 40px;
+    width: 80px;
+    color: #fdfdfd;
+}
+#tic {
+    position: relative;
+    margin-top: 10px;
+}
+#clearAll {
+    background-color: #ef3636;
+    color: white;
+    border: 0;
+    height: 30px;
+    position: relative;
+    bottom: 3px;
+}
