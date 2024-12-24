@@ -1,0 +1,15 @@
+.container1 {
+    flex-direction: column;
+}
+.knopka1 {
+    background-color: white;
+}.knopka2 {
+    background-color: black;
+    color: white;
+}.knopka3 {
+    background-color: #878686;
+}.knopka4 {
+    background-color: darkblue;
+    color:greenyellow;
+}
+
