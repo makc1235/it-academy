@@ -10,7 +10,28 @@ let ButtonClear = document.getElementById('ButtonClear')
 let an = document.getElementById('an')
 let tic = document.getElementById('tic')
 let number = 0
+let number2 = 0
 let clearAll = document.getElementById('clearAll')
+let tik2 = document.getElementById('tik2')
+
+function delAl() {
+    let question = 'Вы точно хотите удалить все товары?'
+    const result = confirm(question)
+    if (result){
+        elements.innerHTML = ''
+        number = 0
+        tic.innerHTML = `<span>Добавлено товаров: ${ number }</span>`;
+        number2 = 0
+        tik2.innerHTML = `<span> Общая сумма: ${ number2 }</span>`;
+    }
+    else {
+
+    }
+}
+
+
+
+clearAll.addEventListener('click', delAl)
 
 function appendElement() {
     const newDiv = document.createElement("div");
@@ -45,6 +66,8 @@ function appendElement() {
     newDiv.append(del)
     del.innerHTML = 'Удалить'
     del.classList.add('del')
+    number2 = number2 + +Price.value
+    let newPrice = +Price.value
     Name.value = ''
     Price.value = ''
     Kolvo.value = ''
@@ -52,25 +75,8 @@ function appendElement() {
     OP.value = ''
     number = number+1
     tic.innerHTML = `<span>Добавлено товаров: ${ number }</span>`;
+    tik2.innerHTML = `<span> Общая сумма: ${ number2 }</span>`;
 
-
-    function delAl() {
-        let question = 'Вы точно хотите удалить все товары?'
-        const result = confirm(question)
-        if (result){
-            TxT.remove();
-            price.remove();
-            kolvo.remove();
-            art.remove();
-            op.remove();
-            newDiv.remove();
-        }
-        else {
-            
-        }
-
-    }
-    clearAll.addEventListener('click', delAl)
     const an = document.createElement('button');
     newDiv.append(an)
     an.innerHTML = 'Купить'
@@ -86,10 +92,15 @@ function appendElement() {
         art.remove();
         op.remove();
         newDiv.remove();
+        let question = 'Вы точно хотите удалить этот товар?'
+        const result = confirm(question)
         number = number-1
         tic.innerHTML = `<span>Добавлено товаров: ${ number }</span>`;
+        number2 = number2 - newPrice
+        tik2.innerHTML = `<span> Общая сумма: ${ number2 }</span>`;
     }
     del.addEventListener('click', delet)}
+
 function deleteA() {
     Name.value =''
     Price.value =''
