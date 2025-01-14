@@ -29,8 +29,6 @@ function delAl() {
     }
 }
 
-
-
 clearAll.addEventListener('click', delAl)
 
 function appendElement() {
@@ -86,18 +84,20 @@ function appendElement() {
     }
     an.addEventListener('click', xp)
     function delet() {
-        TxT.remove();
-        price.remove();
-        kolvo.remove();
-        art.remove();
-        op.remove();
-        newDiv.remove();
         let question = 'Вы точно хотите удалить этот товар?'
         const result = confirm(question)
-        number = number-1
-        tic.innerHTML = `<span>Добавлено товаров: ${ number }</span>`;
-        number2 = number2 - newPrice
-        tik2.innerHTML = `<span> Общая сумма: ${ number2 }</span>`;
+        if (result == true) {
+            TxT.remove();
+            price.remove();
+            kolvo.remove();
+            art.remove();
+            op.remove();
+            newDiv.remove();
+            number = number-1
+            tic.innerHTML = `<span>Добавлено товаров: ${ number }</span>`;
+            number2 = number2 - newPrice
+            tik2.innerHTML = `<span> Общая сумма: ${ number2 }</span>`;
+        }
     }
     del.addEventListener('click', delet)}
 
@@ -108,7 +108,6 @@ function deleteA() {
     Art.value =''
     OP.value =''
 }
-
 
 ButtonAdd.addEventListener('click', appendElement);
 ButtonClear.addEventListener('click', deleteA)

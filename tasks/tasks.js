@@ -3,6 +3,12 @@ let description = document.getElementById('description')
 let button = document.getElementById('button')
 let list = document.getElementById("list")
 let no = 0
+
+let searchInput = document.getElementById('search')
+let searchButton = document.getElementById('search-btn')
+let resetButton = document.getElementById('reset-button')
+let taskListHtml = ''
+
 function addTask() {
     let taskNomer = document.createElement('div')
     let task = document.createElement('div');
@@ -33,9 +39,35 @@ function addTask() {
     //Добавляем новый элемент в конец списка задач
     list.append(task);
 
+    tasksListHtml = list.innerHTML;
+
     //Очищаем поля формы
     title.value = "";
     description.value = "";
 }
 
-button.addEventListener('click', addTask)
+button.addEventListener('click', addTask);
+
+function searchTask(){
+
+    let tasks = document.getElementsByClassName('task');
+
+    for(let task of tasks){
+        let titles = task.getElementsByClassName('task-list');
+        let title = titles[0]
+
+        console.log('Пользователь хочет найти', searchInput.value);
+
+        if (title.innerText.includes(searchInput.value) == false) {
+            task.remove();
+        }
+    }
+}
+
+searchButton.addEventListener('click', searchTask)
+
+function resetTasks(){
+    list.innerHTML = taskListHtml;
+}
+
+resetButton.addEventListener('click', resetTasks)
