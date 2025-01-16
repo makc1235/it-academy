@@ -7,7 +7,6 @@ let no = 0
 let searchInput = document.getElementById('search')
 let searchButton = document.getElementById('search-btn')
 let resetButton = document.getElementById('reset-button')
-let taskListHtml = ''
 
 function addTask() {
     let taskNomer = document.createElement('div')
@@ -59,7 +58,7 @@ function searchTask(){
         console.log('Пользователь хочет найти', searchInput.value);
 
         if (title.innerText.includes(searchInput.value) == false) {
-            task.remove();
+            task.style.display = 'none'
         }
     }
 }
@@ -67,7 +66,11 @@ function searchTask(){
 searchButton.addEventListener('click', searchTask)
 
 function resetTasks(){
-    list.innerHTML = taskListHtml;
+    let tasks = document.getElementsByClassName('task')
+
+    for (let task of tasks){
+        task.style.display = 'block'
+    }
 }
 
 resetButton.addEventListener('click', resetTasks)

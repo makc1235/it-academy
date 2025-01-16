@@ -1,6 +1,7 @@
 let ButtonAdd = document.getElementById("ButtonAdd");
 let elements = document.getElementById('contt2');
 let Name = document.getElementById("Name");
+let Kategoria = document.getElementById("Kategoria");
 let Price = document.getElementById("Price");
 let Kolvo = document.getElementById("Kolvo");
 let Art = document.getElementById("Art");
@@ -13,6 +14,37 @@ let number = 0
 let number2 = 0
 let clearAll = document.getElementById('clearAll')
 let tik2 = document.getElementById('tik2')
+let search = document.getElementById('search')
+let searchBtn = document.getElementById('search-btn')
+let resetButton = document.getElementById('reset-button')
+
+
+function searchTask() {
+    let products = document.getElementsByClassName('element')
+    for (let product of products) {
+        let title = product.getElementsByClassName('title')
+        title = title[0]
+
+        if (title.innerText.includes(search.value) == false) {
+            product.style.display = 'none'
+        }
+    }
+}
+
+
+searchBtn.addEventListener('click', searchTask)
+
+function resetTasks(){
+    let products = document.getElementsByClassName('element')
+
+    for (let product of products){
+        product.style.display = 'block'
+    }
+}
+
+resetButton.addEventListener('click', resetTasks)
+
+
 
 function delAl() {
     let question = 'Вы точно хотите удалить все товары?'
@@ -40,6 +72,11 @@ function appendElement() {
     TxT.innerHTML = Name.value
     newDiv.append(TxT)
     TxT.classList.add('title');
+    const kategoria = document.createElement('h3')
+    kategoria.classList.add('text')
+    kategoria.innerHTML = 'Категория:' + Kategoria.value;
+    newDiv.append(kategoria)
+    kategoria.classList.add('kategoria')
     const price = document.createElement('h3');
     price.classList.add('text')
     price.innerHTML = 'Цена: ' + Price.value;
