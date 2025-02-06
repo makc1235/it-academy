@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="kino.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+    />
+    <title>Кинопоиск</title>
+</head>
+<body>
+<header class="container">
+    <div class="header__content">
+        <a class="header__logo">Кинопоиск (ну, почти)</a>
+    </div>
+</header>
+<div class="container">
+    <div class="movies" id="movies">
+        <div class="movie">
+            <div class="movie__cover-inner">
+                <img
+                        class="movie__cover"
+                        src="https://kinopoiskapiunofficial.tech/images/posters/kp_small/404900.jpg"
+                        alt="Во все тяжкие"
+                >
+            </div>
+            <div class="movie__title">
+                Во все тяжкие
+            </div>
+            <div class="years">
+                2008
+            </div>
+            <div class="movie__average">
+                8.9
+            </div>
+        </div>
+    </div>
+    <div class="pages"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="kino.js"></script>
+</body>
+</html>
